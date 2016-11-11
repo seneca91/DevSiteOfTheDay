@@ -1,16 +1,24 @@
+article {
+  padding: 10px;
+  background: #eeeeee; }
+
 body {
-  background: #eeeeee;
+  margin: 0;
   font-family: 'Source Code Pro', monospace; }
 
-article {
-  color: black;
-  padding: 10px; }
-
 header {
-  padding: 5px;
-  text-align: right;
-  background-color: #181818;
-  height: 80px; }
+  display: flex;
+  justify-content: flex-end;
+  background-color: #181818; }
+
+h1 {
+  padding-right: 20px;
+  font-family: 'VT323', monospace;
+  font-size: 2.5em;
+  color: white; }
+
+p {
+  margin: 25px; }
 
 .rightContent {
   color: white;
@@ -27,19 +35,12 @@ header {
   justify-content: space-between;
   background: #183152; }
 
-h1 {
-  display: inline-block;
-  font-family: 'VT323', monospace;
-  font-size: 2.5em;
-  color: white; }
+.leftContent img {
+  border: solid 2px white;
+  border-radius: 5px; }
 
-p {
-  margin: 25px; }
-
-img {
-  max-width: 350px;
-  max-height: 350px;
-  border: solid 3px white;
+.rightContent img {
+  border: solid 2px white;
   border-radius: 5px; }
 
 footer {
@@ -47,14 +48,31 @@ footer {
   flex-direction: row-reverse;
   background-color: #181818; }
 
+footer img {
+  margin: 10px;
+  border-radius: 180px;
+  background: white; }
+
+.twitter {
+  background: #71C9F8; }
+
+.facebook {
+  background: #3B5998; }
+
+.github {
+  background: #684F84; }
+
 @media (max-width: 650px) {
   .leftContent {
     flex-wrap: wrap-reverse;
     justify-content: center; } }
 @media (max-width: 650px) {
   .rightContent {
-    flex: 0 0 auto;
     flex-wrap: wrap-reverse;
     justify-content: center; } }
+@media (max-width: 650px) {
+  .leftContent a img,
+  .rightContent a img {
+    max-width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
