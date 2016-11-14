@@ -15,6 +15,7 @@ header {
 }
 
 h1 {
+  animation: pulse 3000ms infinite;
     padding-right: 20px;
     font-family: 'VT323', monospace;
     font-size: 2.5em;
@@ -24,6 +25,8 @@ h1 {
 p {
     margin: 25px;
 }
+
+
 
 .rightContent {
     color: white;
@@ -69,6 +72,10 @@ footer img {
 .facebook{background:#3B5998;}
 .github{background:#684F84;}
 
+.twitter, .facebook,.github{
+  transition-duration: 300ms;
+  transition-property: transform;
+}
 
 @media (max-width: 650px) {
     .leftContent {
@@ -87,4 +94,21 @@ footer img {
     .rightContent a img {
         max-width: 100%;
     }
+}
+
+
+//-----------------------h1Animation
+
+
+@keyframes pulse {
+  0% {
+    color: #5dd586;
+  }
+  100% {
+    color: #2ac89d;
+  }
+}
+//------------------------
+.github:hover, .twitter:hover, .facebook:hover{
+transform: rotate(360deg)
 }
