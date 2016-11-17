@@ -1,90 +1,119 @@
 article {
-  padding: 10px;
-  background: #eeeeee; }
+    padding: 10px;
+    background: #eeeeee;
+}
 
 body {
-  margin: 0;
-  font-family: 'Source Code Pro', monospace; }
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
 
 header {
-  display: flex;
-  justify-content: flex-end;
-  background-color: #181818; }
+    display: flex;
+    justify-content: flex-end;
+    background-color: #181818;
+}
 
 h1 {
-  animation: pulse 3000ms infinite;
-  padding-right: 20px;
-  font-family: 'VT323', monospace;
-  font-size: 2.5em;
-  color: white; }
+    animation: pulse 3000ms infinite;
+    padding-right: 20px;
+    font-family: 'VT323', monospace;
+    font-size: 2.5em;
+    color: white;
+}
 
 p {
-  margin: 25px; }
+    margin: 25px;
+}
 
 .rightContent {
-  color: white;
-  padding: 20px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  background: #375D81; }
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background: #375D81;
+}
 
 .leftContent {
-  color: white;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  background: #183152; }
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: #183152;
+}
 
 .leftContent img {
-  border: solid 2px white;
-  border-radius: 5px; }
+    border: solid 2px white;
+    border-radius: 5px;
+}
 
 .rightContent img {
-  border: solid 2px white;
-  border-radius: 5px; }
+    border: solid 2px white;
+    border-radius: 5px;
+}
 
 footer {
-  display: flex;
-  flex-direction: row-reverse;
-  background-color: #181818; }
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #181818;
+}
 
 footer img {
-  margin: 10px;
-  border-radius: 180px;
-  background: white; }
+    margin: 20px;
+    border-radius: 180px;
+    background: white;
+}
 
 .twitter {
-  background: #71C9F8; }
+    background: #71C9F8;
+}
 
 .facebook {
-  background: #3B5998; }
+    background: #3B5998;
+}
 
 .github {
-  background: #684F84; }
+    background: #684F84;
+}
 
 .twitter, .facebook, .github {
-  transition-duration: 300ms;
-  transition-property: transform; }
+    transition-duration: 300ms;
+    transition-property: transform;
+}
 
 @media (max-width: 650px) {
-  .leftContent {
-    flex-wrap: wrap-reverse;
-    justify-content: center; } }
+    .leftContent {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 650px) {
-  .rightContent {
-    flex-wrap: wrap-reverse;
-    justify-content: center; } }
+    .rightContent {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 650px) {
-  .leftContent a img,
-  .rightContent a img {
-    max-width: 100%; } }
+    .leftContent a img, .rightContent a img {
+        max-width: 100%;
+    }
+}
+
 @keyframes pulse {
-  0% {
-    color: #5dd586; }
-  100% {
-    color: #2ac89d; } }
+    0% {
+        color: #5dd586;
+    }
+    100% {
+        color: #2ac89d;
+    }
+}
+
 .github:hover, .twitter:hover, .facebook:hover {
-  transform: rotate(360deg); }
+    transform: rotate(360deg);
+}
+
 
 /*# sourceMappingURL=style.css.map */
